@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "BscScan",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#f8f9fa"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/bscscan-logo.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://bsscan.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://bsscan.github.io/sitemap.xml",
+    "mbrsiteDomain": "reyyiqdwzh",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "BscScan™ | Home Official Site",
+        "meta_descr": "BscScan is a tool to view and analyze the Binance blockchain, also known as BNB Smart Chain. You can check the latest blocks, transactions, prices, tokens and other data on BscScan.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://bscscan.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/bscscan.png\" alt=\"Bscscan\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uoHT7R3xot",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#f8f9fa\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#f8f9fa\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>BscScan: Your Comprehensive Guide to Exploring the Binance Smart Chain</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  As decentralized finance (DeFi) and non-fungible tokens (NFTs) continue to reshape the cryptocurrency landscape, the importance of reliable blockchain data becomes increasingly evident. <a href=\"https://bsscan.github.io/\" class=\"text-primary\">BscScan</a>, the leading blockchain explorer for the Binance Smart Chain (BSC), provides users with an intuitive platform to explore, analyze, and monitor transactions and smart contracts on the BSC network. In this blog, we will delve into the features, benefits, and overall significance of <a href=\"https://bscscan.com/\" class=\"text-primary\">BscScan</a>, as well as guide you on how to effectively use this essential tool for navigating the Binance Smart Chain ecosystem.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is BscScan?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  BscScan is a blockchain explorer specifically designed for the Binance Smart Chain, allowing users to access a wide array of blockchain data. Launched in 2020, BscScan serves as a comprehensive platform for tracking transactions, viewing wallet balances, analyzing smart contracts, and exploring various tokens and decentralized applications (DApps) operating on the BSC network. It is an invaluable resource for developers, traders, and anyone interested in the Binance Smart Chain.<br><br><b>Key Features of BscScan</b><br><br><b>1.Transaction Tracking:</b> BscScan enables users to track individual transactions in real time. By entering a transaction hash, users can view details such as transaction status, timestamps, block height, and gas fees.<br><br><b>2.Account Information:</b> Users can explore detailed account information, including balances, types of tokens held, and transaction history. This feature is crucial for monitoring wallet activities.<br><br><b>3.Token Analytics:</b> BscScan provides comprehensive information about various tokens on the Binance Smart Chain, including price data, market capitalization, and trading volumes. This is essential for investors looking to analyze potential investments.<br><br><b>4.Smart Contract Insights:</b> Users can view information related to smart contracts deployed on BSC, including code, interactions, and transaction histories. This transparency is vital for developers and users interacting with decentralized applications.<br><br><b>5.DApp Monitoring:</b> BscScan tracks various DApps operating on the Binance Smart Chain, allowing users to monitor their performance and user engagement metrics. This helps users identify popular and promising applications.<br><br><b>6.Validator Performance:</b> The platform provides insights into the performance of validators on the BSC network, including uptime, stake amounts, and rewards distribution.<br><br><b>7.User-Friendly Interface:</b> BscScan boasts an intuitive design, making it easy for both newcomers and experienced users to navigate the platform and access critical data.<br><br><b>8.Cross-Platform Compatibility:</b> Accessible via web browsers, BscScan can be used on various devices, making it convenient for users to check blockchain data anytime, anywhere.<br>\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Why Use BscScan?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Enhanced Transparency</b><br>One of the primary advantages of using BscScan is the transparency it offers. Blockchain technology operates on principles of openness and accountability, and BscScan embodies these values by providing users with access to real-time data. This transparency is essential for building trust within the Binance Smart Chain community and ensuring that users can verify transactions independently.<br><br><b>Informed Decision-Making</b><br>For traders and investors, having access to accurate and up-to-date information is crucial. BscScan equips users with the necessary tools to analyze transactions, monitor token performance, and keep track of their investments. By leveraging BscScan’s analytics, users can make informed decisions and execute strategies based on real-time data.<br><br><b>Simplifying Complex Data</b><br>The Binance Smart Chain generates vast amounts of data daily, making it challenging for users to navigate without proper tools. BscScan simplifies this complexity by presenting data in a user-friendly format, allowing users to access the information they need effortlessly. Whether you’re a developer looking to analyze smart contracts or a trader tracking your investments, BscScan streamlines the process.<br><br><b>Community Engagement</b><br>BscScan plays a vital role in fostering community engagement within the Binance Smart Chain ecosystem. By providing insights into transaction volumes, popular tokens, and DApp usage, the platform encourages users to participate actively in the community. This engagement helps drive the growth and adoption of the Binance Smart Chain.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Use BscScan?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Step 1: Accessing BscScan</b><br>To get started with BscScan, simply visit the BscScan website. The platform is accessible via web browsers, so you can use it on both desktop and mobile devices.<br><br><b>Step 2: Exploring Transactions</b><br>To track a specific transaction, enter the transaction hash in the search bar. This will pull up detailed information regarding the transaction, including its status, timestamp, block height, and gas fees. This feature is especially useful for confirming whether a transaction has been successfully processed.<br><br><b>Step 3: Viewing Account Information</b><br>To check account balances and transaction history, enter the wallet address in the search bar. This will display all relevant information, including token balances and a list of recent transactions associated with that address.<br><br><b>Step 4: Analyzing Tokens</b><br>For those interested in specific tokens, navigate to the \"Tokens\" section. Here, you can search for tokens by name or symbol to view price information, market capitalization, and trading volumes. This data is crucial for assessing the potential of various tokens before making investment decisions.<br><br><b>Step 5: Monitoring DApps</b><br>If you’re interested in decentralized applications, BscScan provides a DApp monitoring feature. You can explore various DApps, view their transaction volumes, and analyze user engagement metrics. This information helps you identify promising applications and trends within the BSC ecosystem.<br><br><b>Step 6: Smart Contract Analysis</b><br>Developers can benefit from the smart contract analysis feature. By searching for a specific contract address, you can view the contract code, interactions, and transaction history. This transparency is essential for ensuring that contracts are trustworthy and function as intended.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of BscScan in the Binance Smart Chain Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Supporting Developers</b><br>For developers building on the Binance Smart Chain, BscScan serves as an invaluable resource. The platform provides insights into smart contracts, allowing developers to analyze their code and assess interactions. This transparency fosters a culture of accountability, ensuring that developers can optimize their applications for better performance.<br><br><b>Enhancing User Experience</b><br>As more users flock to the Binance Smart Chain, providing a seamless user experience becomes paramount. BscScan enhances this experience by offering a centralized location for accessing blockchain data. Users can easily track transactions, monitor investments, and explore new tokens, all in one place.<br><br><b>Promoting Decentralization</b><br>One of the core tenets of blockchain technology is decentralization. BscScan embodies this principle by enabling users to access information independently. This reduces reliance on centralized entities and promotes a more decentralized ecosystem where users can verify transactions and monitor their assets.<br><br><b>Driving Adoption</b><br>By facilitating easier access to blockchain data, BscScan plays a crucial role in driving the adoption of the Binance Smart Chain. As users become more comfortable navigating the ecosystem, they are more likely to engage in trading, investing, and participating in DeFi activities.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Future Developments for BscScan</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Enhanced Analytics Tools</b><br>As the Binance Smart Chain continues to grow, BscScan plans to introduce advanced analytics tools that provide deeper insights into transaction patterns, user behavior, and token performance. These tools will empower users to make even more informed decisions.<br><br><b>Improved User Experience</b><br>BscScan is committed to continuously improving its user interface and experience. Future updates may include personalized dashboards, advanced search filters, and enhanced visualizations to help users better understand the data they are accessing.<br><br><b>Community Features</b><br>To foster further community engagement, BscScan is exploring the integration of social features that allow users to share insights, discuss trends, and collaborate on investment strategies. This will help build a stronger community around the Binance Smart Chain.<br><br><b>Cross-Chain Compatibility</b><br>As the DeFi space evolves, cross-chain interactions are becoming increasingly important. BscScan is considering adding features that allow users to track assets and transactions across multiple blockchains, enhancing its utility as a comprehensive blockchain explorer.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases of BscScan</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>For Traders</b><br>For traders, BscScan is an essential tool for monitoring transactions and analyzing token performance. Users can track their own transactions and those of others, identify trends, and execute trades based on real-time data.<br><br><b>For Investors</b><br>Investors can leverage BscScan to conduct thorough research before making investment decisions. By analyzing token metrics, transaction history, and market trends, they can gain deeper insights into potential opportunities and risks.<br><br><b>For Developers</b><br>Developers building on the Binance Smart Chain can utilize BscScan to test and verify their smart contracts. By monitoring contract interactions and transaction histories, they can ensure that their applications function correctly and efficiently.<br><br><b>For Researchers</b><br>Researchers interested in blockchain technology can use BscScan as a valuable resource for studying the Binance Smart Chain’s ecosystem. By analyzing transaction patterns, token migrations, and DApp usage, they can gain insights into the functioning of decentralized networks.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Data Overload</b><br>As the Binance Smart Chain continues to grow, the volume of data available on BscScan may become overwhelming for some users. It’s essential for users to develop strategies for efficiently navigating and analyzing this data to avoid information overload.<br><br><b>Security Risks</b><br>While BscScan is a powerful tool, users should remain vigilant and practice good security hygiene. Always double-check transaction details and contract addresses before interacting with them to mitigate the risk of scams or phishing attempts.<br><br><b>Market Volatility</b><br>The cryptocurrency market is known for its volatility, and BscScan users should be aware of the risks associated with trading and investing. Conducting thorough research and employing sound risk management practices is crucial for success in this space.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">BscScan is an indispensable resource for anyone navigating the Binance Smart Chain ecosystem. By providing real-time access to crucial blockchain data, BscScan empowers traders, developers, and investors to make informed decisions and engage actively in the decentralized finance landscape. Its commitment to transparency, user experience, and community engagement has solidified its position as the leading blockchain explorer for the Binance Smart Chain.<br><br>As the BSC ecosystem continues to evolve, BscScan will undoubtedly play a critical role in shaping its future. Whether you’re a newcomer looking to explore the world of decentralized finance or an experienced user seeking detailed insights, BscScan is your go-to resource for all things related to the Binance Smart Chain. With its commitment to continuous improvement and innovation, BscScan is well-positioned to remain a vital player in the cryptocurrency landscape for years to come.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uoHT8BEB2W",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
